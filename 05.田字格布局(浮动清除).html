@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>浮动布局</title>
+	<style>
+	#part1
+	{
+		width: 300px;
+		height: 300px;
+		background: red;
+		float: left;
+	}
+	#part2
+	{
+		width: 300px;
+		height: 300px;
+		background: green;
+		float: left;
+	}
+	#part3
+	{
+		width: 300px;
+		height: 300px;
+		background: yellow;
+		float: left;/*先浮动布局*/
+		clear: left;/*然后清除*/
+	}
+	#part4
+	{
+		width: 300px;
+		height: 300px;
+		background: blue;
+		float: left;
+	}
+	</style>
+</head>
+	<body>
+		<div id="part1">块1</div>
+		<div id="part2">块2</div>
+		<div id="part3">块3</div>
+		<div id="part4">块4</div>
+	</body>
+</html>

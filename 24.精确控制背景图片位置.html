@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>css文字控制</title>
+<style>
+	#test1
+	{
+		width: 1024px;
+		height: 2000px;
+		background-color: #AAAAAA;/*当背景图片和颜色同时定义时优先显示背景图片*/
+		background-image: url(550583.jpg);
+		background-repeat: no-repeat;/*X轴，水平方向平铺，默认水平竖直方向均平铺*/
+		background-position: center top;/*图片位置，先定义水平方向，后定义竖直方向*/
+	}
+	#test2
+	{
+		width: 30px;
+		height: 30px;
+		border: 1px solid #0000FF;
+		/*background-image: url(550583.jpg);
+		background-position: 0px -20px;/*计算机中左上角为(0,0)原点，X为负往左移动，往右为正，Y为负往上移动，往下为正*/
+		background: gray url(550583.jpg) no-repeat 0px 20px;/*一行写完background定义：颜色→图片→平铺方向→attachment是否随页面滚动→图片位置*/
+
+	}
+</style>
+</head>
+	<body>
+		<div id="test1"></div>
+		<div id="test2"></div>
+	</body>
+</html>

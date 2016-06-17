@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>css伪类</title>
+<style>
+	a:link/*普通状态链接，可简写为a*/
+	{
+		color: blue;
+	}
+	a:hover/*鼠标悬停时状态*/
+	{
+		color: red;
+	}
+	a:visited/*链接访问后状态*/
+	{
+		color: gray;
+	}
+	a:active/*鼠标点击时状态，一般不写*/
+	{
+		color: black;
+	}
+	/*应严格按照顺序写链接状态*/
+</style>
+</head>
+	<body>
+		<div>
+			css允许针对a标签四种状态设置各自的css特性，叫做css伪类
+		</div><!--网址末端使用 ? 加参数-->
+		<a href="#">空链接</a>
+		<a href="#">空链接</a>
+		<a href="#">空链接</a>
+		<a href="#">空链接</a>
+		<a href="#">空链接</a>
+		<a href="#">空链接</a>
+	</body>
+</html>

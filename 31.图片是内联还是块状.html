@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片是内联还是块状</title>
+<style>
+	img
+	{
+		width: 100px;
+		height: 100px;
+		display: block;
+	}
+	#test1
+	{
+		width: 30px;
+		height: 30px;
+		border: 1px solid blue;
+	}
+</style>
+</head>
+	<body>
+		<img src="./550583.jpg" alt="" />
+		<img src="./550583.jpg" alt="" />
+		<div id="test1">图片是内联元素，又是内联替换元素，替换元素能设置宽高</div>
+	</body>
+</html>

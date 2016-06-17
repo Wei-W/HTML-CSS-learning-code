@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>盒模型border设置（边框）</title>
+	<style>
+		#a
+		{
+			width: 800px;
+			height: 800px;
+			background: #0000FF;
+			/*border: 20px dotted #00FF00;*/
+			/*border-top: 10px solid #000000; /*单独设置某方向边框*/
+			/*也可以单独设置边框三要素之一，比如颜色*/
+			border-top-style: dashed;
+
+		}
+	</style>
+</head>
+	<body>
+	<div id="a"><!--小技巧：创建一个总div方便调节-->
+		盒子的border 3要素 宽(border-width)，形状(border-style)，颜色(border-color)
+	</div>
+	</body>
+</html>

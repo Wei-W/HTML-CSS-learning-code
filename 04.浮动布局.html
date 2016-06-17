@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>浮动布局</title>
+	<style>
+		#a123/*父div宽高被子div撑起*/
+		{
+			width: 600px;
+			clear: both;
+			background: #999999
+		}
+		#lside
+		{
+			height: 450px;
+			width: 150px;
+			background: red;
+			float: left;/*浮动布局：左*/
+		}
+		#rside
+		{
+			height: 300px;
+			width: 150px;
+			background: orange;
+			float: right;/*浮动布局：右*/
+		}
+		#common
+		{
+			height: 100px;
+			clear: both;/*该div区域不允许有左浮元素*/
+			background: #00FF00
+		}
+	</style>
+</head>
+	<body>
+		<div id="a123"> <!--父div-->
+			<div id="lside">左</div><!--子div1-->
+			<div id="rside">右</div><!--子div2-->
+			<div id="common">普通</div><!--子div3-->
+		</div>
+	</body>
+</html>

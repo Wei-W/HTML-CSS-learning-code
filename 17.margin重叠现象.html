@@ -1,0 +1,35 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>盒模型border设置（边框）</title>
+	<style>
+		#container
+		{
+			height: 500px;
+			background: gray;
+			margin-top: 50px;
+		}
+		#test1
+		{
+			height: 100px;
+			background: blue;
+			margin-top: 200px;
+			margin-bottom: 50px;
+		}
+		#test2
+		{
+			height: 100px;
+			background: green;
+			margin-top: 80px;
+		}
+	</style>
+</head>
+	<body>
+	<div id="container"><!--父子div上下margin重叠测试-->
+		<div id="test1">相邻的【普通】元素，上下边距，并非简单的相加，<br/>而是：取其中较大的边距值<br/>这种现象叫margin重叠<br/>普通元素：非浮动</div>
+		<div id="test2"></div>
+	</div>
+	</body>
+</html>

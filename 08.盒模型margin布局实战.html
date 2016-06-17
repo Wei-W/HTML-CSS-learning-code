@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>盒模型border设置（边框）</title>
+	<style>
+	#container
+	{
+		width: 1080px;
+		background: #666666;
+	}
+	#top
+	{
+		width: 1024px;
+		height: 200px;
+		background: #FF00FF;
+	}
+	#top2
+	{
+		width: 1024px;
+		height: 100px;
+		background: #FFFF00;
+	}
+	.four/*控制所有class="four"的div，类前用.控制class*/
+	{
+		width: 350px;
+		height: 150px;
+		background: #220000;
+		margin: 10px;
+		float: left;
+	}
+	#left
+	{
+		width: 768px;
+		height: 400px;
+		background: #0000FF;
+		float: left;/*先浮动布局*/
+		clear: left;/*然后清除*/
+	}
+	#right
+	{
+		width: 256px;
+		height: 400px;
+		background: #000066;
+		float: left;
+	}
+	#footer
+	{
+		width: 1024px;
+		height: 100px;
+		background: #FFFF00;
+		clear: left;
+	}
+	</style>
+</head>
+	<body>
+	<div id="container"><!--小技巧：创建一个总div方便调节-->
+		<div id="top"></div>
+		<div id="top2"></div>
+		<div id="middle"><!--父dvi-->
+			<div id="left"><!--子dvi-->
+				<div class="four"></div><!--class：一类，仅使用一次css定义-->
+				<div class="four"></div>
+				<div class="four"></div>
+				<div class="four"></div>
+			</div>
+			<div id="right"></div>
+		</div>
+		<div id="footer"></div>
+	</div>
+	</body>
+</html>

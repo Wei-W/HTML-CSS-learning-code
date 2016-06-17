@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>css文字控制</title>
+<style>
+	#test1
+	{
+		color: blue;
+		font-style: italic;/*斜体*/
+		font-weight: bold;/*加粗*/
+		font-size: 30px;/*字号*/
+		line-height: 40px;/*行高*/
+		font-family: "微软雅黑"/*字体，sans-serif无衬线，seirf衬线字体*/
+	}
+	#test2
+	{
+		font: italic bold 23px/46px "微软雅黑";/*一行定义文字控制顺序：斜体、加粗、字体大小/行高、字体*/
+	}
+	</style>
+</head>
+<body>
+	<div id="test1">
+		我的首页<br/>
+		我的首页
+	</div>
+	<div id="test2">
+		我的首页2<br/>
+	</div>
+</body>
+</html>

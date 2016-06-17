@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>css优先级</title>
+<style>
+	p/*标签选择器适用范围广，优先级比较低*/
+	{
+		color: red;
+		font-family: "微软雅黑"
+	}
+	.test2/*高于标签*/
+	{
+		color: green;
+	}
+	#test1/*选择器控制得越精细，优先级越高*/
+	{
+		color: blue;
+	}
+	div #test1/*派生选择器，div下的p标签*/
+	{
+		color: pink;
+	}
+</style>
+</head>
+	<body>
+		<div>
+			<p id="test1" class="test2">123456789</p>
+		</div>
+	</body>
+</html>

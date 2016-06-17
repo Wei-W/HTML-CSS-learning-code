@@ -1,0 +1,30 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>内联 块状 转化</title>
+	<style>
+		#pt
+		{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+			color: red;
+			display: block;/*转化为块*/
+		}
+		#container
+		{
+			height: 500px;
+			margin-top: 50px;
+			background: blue;
+			display: none;
+			/*display: inline;*//*转化为内联*/
+		}
+	</style>
+</head>
+	<body>
+	<div id="container">块状</div>
+	<span id="pt">行内</span>
+	</body>
+</html>

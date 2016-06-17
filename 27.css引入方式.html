@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML类型定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>css优先级</title>
+<link href="test1.css" rel="stylesheet" type="text/css"/><!--链接式-->
+<style>
+	body/*嵌入式*/
+	{
+		background: #FF00FF;
+	}
+</style>
+<style type="text/css">
+	@import"test2.css";/*上一级目录直接加“..”*/
+</style>
+</head>
+	<body>
+		<div id="test1" style="color: #123456">123456789</div><!--行内式-->
+		<div id="test2">234567890</div>
+	</body>
+</html>

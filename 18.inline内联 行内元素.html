@@ -1,0 +1,29 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>内联元素</title>
+	<style>
+		#pt
+		{
+			margin: 100px;/*行内元素margin、padding只在左右起作用，无法在上下方向起作用，width和height无作用*/
+			color: red;
+		}
+		#container
+		{
+			height: 500px;
+			background: gray;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+	<body>
+	<div id="container">
+		相邻的<span id="pt">【普通】</span>元素，上下边距，并非简单的相加，<br/>
+		而是：取其中较大的边距值<br/>
+		这种现象叫margin重叠<br/>
+		普通元素：非浮动</div>
+	</div>
+	</body>
+</html>

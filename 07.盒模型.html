@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>盒模型</title>
+	<style>
+	#container
+	{
+		width: 1000px;
+		height: 600px;
+		background: #666666;
+	}
+	div
+	{
+		width: 400px;
+		height: 200px;
+		background: #FF00FF;
+		float: left;
+	}
+	#test
+	{
+		/*
+		margin: 10px;/*margin：盒模型外边距*/
+		/*
+		margin-top: 10px;/*上边距*/
+		/*
+		margin-right: 20px;/*右边距*/
+		/*
+		margin-bottom: 5px;/*下边距*/
+		margin:10px 20px 30px;/*从上边开始顺时间旋转分配边距，未分配方向取对边值*/
+	}
+	#test2
+	{
+		background: #FF6600
+	}
+	#test3
+	{
+		width: 1000px;
+	}
+	</style>
+</head>
+	<body>
+	<div id="container"><!--小技巧：创建一个总div方便调节-->
+		<div id="test"></div>
+		<div id="test2"></div>
+		<div id="test3"></div>
+	</div>
+	</body>
+</html>

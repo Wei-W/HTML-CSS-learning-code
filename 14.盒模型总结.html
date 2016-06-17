@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!--HTML DOCTYPE定义，常见三种：strict.dtd严格标准，transition.dtd过渡标准，-->
+<html>
+<head>
+<meta charset="utf-8">
+	<title>盒模型border设置（边框）</title>
+	<style>
+		div
+		{
+			width: 300px;
+			height: 300px;
+			background: gray;
+			border: 50px solid blue;
+			padding: 50px;
+			margin: 50px;
+		}
+	</style>
+</head>
+	<body>
+		<div>
+			一个盒子，有margin，border，padding时，实际占据多少空间？<br/>
+			竖直方向：height + padding-top + padding-bootom + border-top + margin-top + margin-bottom<br/>
+			水平方向：width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+		</div>
+	</body>
+</html>
